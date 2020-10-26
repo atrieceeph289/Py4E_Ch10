@@ -11,6 +11,6 @@ for line in handle:
     words = line.split()[5].split(':')
     for word in words[:1]:
         hours[word] = hours.get(word, 0) + 1
-ordr = sorted(hours.items())
-for k,v in ordr:
+ordrd = sorted(hours.items())
+for k,v in ordrd:
     print(k,v)
